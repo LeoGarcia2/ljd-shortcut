@@ -13,8 +13,7 @@
 </template>
 
 <script>
-    import storageHelper from 'storage-helper'
-        export default {
+    export default {
         data () {
             return {
                 error: null,
@@ -25,8 +24,7 @@
             validateBeforeSubmit () {
                 if (this.password === 'replace-this-with-your-password') {
                     this.error = false
-                    storageHelper.setItem('user-password', this.password)
-                    router.push('Security')
+                    router.push('/')
                 } else {
                     this.error = true
                 }
