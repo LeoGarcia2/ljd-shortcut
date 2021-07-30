@@ -1,4 +1,0 @@
-AuthName "Log in"
-AuthType Basic
-AuthUserFile ./.htpasswd
-Require valid-user
